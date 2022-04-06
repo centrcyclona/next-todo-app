@@ -18,9 +18,7 @@ function TodoList() {
     if (!todo.text || /^\s*$/.test(todo.text)) {
       return;
     }
-
     const newTodos = [todo, ...todos];
-
     setTodos(newTodos);
   };
 

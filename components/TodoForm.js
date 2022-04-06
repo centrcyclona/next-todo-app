@@ -39,7 +39,7 @@ function TodoForm(props) {
       ) : (
         <div className="relative">
           <input
-            className="input-bordered input-ghost input w-full pr-16"
+            className="input-bordered input-ghost input w-full pr-16 focus:outline-none"
             type="text"
             placeholder="Learn Chakra-UI & Next.js"
             value={input}

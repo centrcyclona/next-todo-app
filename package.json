@@ -8,21 +8,21 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^1.1.5",
-    "daisyui": "^1.25.4",
-    "next": "12.0.10",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "@chakra-ui/icons": "^1.1.7",
+    "daisyui": "^2.13.6",
+    "next": "12.1.4",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
     "react-icons": "^4.3.1",
     "theme-change": "^2.0.2",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.2",
-    "eslint": "8.8.0",
-    "eslint-config-next": "12.0.10",
-    "postcss": "^8.4.6",
-    "prettier-plugin-tailwindcss": "^0.1.5",
-    "tailwindcss": "^3.0.18"
+    "autoprefixer": "^10.4.4",
+    "eslint": "8.12.0",
+    "eslint-config-next": "12.1.4",
+    "postcss": "^8.4.12",
+    "prettier-plugin-tailwindcss": "^0.1.8",
+    "tailwindcss": "^3.0.23"
   }
 }
