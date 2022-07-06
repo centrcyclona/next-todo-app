@@ -8,7 +8,8 @@ import useLocalStorage from "../hooks/useLocalStorage";
 
 function TodoList() {
   const [todos, setTodos] = useLocalStorage("todos", []);
-  const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState();
+  const handleMode = () => setTheme(!theme);
 
   useEffect(() => {
     themeChange(false);
@@ -52,17 +53,17 @@ function TodoList() {
         <div className="flex w-[100%] items-center justify-between align-bottom">
           <h1 className="text-5xl">Welcome!</h1>
           <div className="flex">
-            {!theme ? (
-              <FiSun
-                onClick={() => setTheme(true)}
-                className="btn btn-ghost btn-circle btn-sm"
-                data-set-theme="cyberpunk"
-              />
-            ) : (
+            {theme ? (
               <IoMdMoon
-                onClick={() => setTheme(false)}
+                onClick={handleMode}
                 className="btn btn-ghost btn-circle btn-sm"
                 data-set-theme="black"
+              />
+            ) : (
+              <FiSun
+                onClick={handleMode}
+                className="btn btn-ghost btn-circle btn-sm"
+                data-set-theme="cyberpunk"
               />
             )}
           </div>
