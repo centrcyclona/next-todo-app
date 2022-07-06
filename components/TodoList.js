@@ -55,13 +55,13 @@ function TodoList() {
             {!theme ? (
               <FiSun
                 onClick={() => setTheme(true)}
-                className="btn btn-ghost btn-sm btn-circle"
+                className="btn btn-ghost btn-circle btn-sm"
                 data-set-theme="cyberpunk"
               />
             ) : (
               <IoMdMoon
                 onClick={() => setTheme(false)}
-                className="btn btn-ghost btn-sm btn-circle"
+                className="btn btn-ghost btn-circle btn-sm"
                 data-set-theme="black"
               />
             )}
