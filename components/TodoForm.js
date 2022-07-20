@@ -24,7 +24,7 @@ function TodoForm(props) {
       {props.edit ? (
         <div className="relative">
           <input
-            className="input-bordered input-ghost input w-full pr-16"
+            className="input input-bordered input-ghost w-full pr-16"
             type="text"
             placeholder="Edit todo"
             value={input}
@@ -39,9 +39,9 @@ function TodoForm(props) {
       ) : (
         <div className="relative">
           <input
-            className="input-bordered input-ghost input w-full pr-16 focus:outline-none"
+            className="input input-bordered input-ghost w-full pr-16 focus:outline-none"
             type="text"
-            placeholder="Learn Chakra-UI & Next.js"
+            placeholder="Learn Next.js & Tailwind CSS"
             value={input}
             name="text"
             onChange={(e) => setInput(e.target.value)}
